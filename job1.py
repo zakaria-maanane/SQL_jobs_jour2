@@ -36,6 +36,7 @@ try:
 #==================================================================
 
 # ===========--- JOB 5 requête pour calculer la superficie totale ---==========
+    # Utilisation du nom de colonne "superficie" cohérent avec le SQL
     query = "SELECT SUM(superficie) AS superficie_totale FROM etage;"
     cursor.execute(query)
     resultats = cursor.fetchone()  # Récupère le résultat sous forme de tuple
@@ -48,6 +49,7 @@ try:
 #=====================================================================================
 
 # ========--- JOB 6 Ajoute ici la requête pour calculer la capacité totale des salles ---======
+    # Utilisation du nom de colonne "capacite" cohérent avec le SQL
     query = "SELECT SUM(capacite) AS capacite_totale FROM salle;"
     cursor.execute(query)
     resultats = cursor.fetchone()  # Récupère le résultat sous forme de tuple

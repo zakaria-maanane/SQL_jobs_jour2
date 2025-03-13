@@ -1,4 +1,3 @@
-
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `laplateforme_jour2` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `laplateforme_jour2`;
@@ -52,11 +51,13 @@ CREATE TABLE salle (
 );
 
 --job3--
-INSERT INTO etage (nom_etage, numero_etage, superficie) VALUES
+-- Correction des noms de colonnes pour correspondre à la définition de la table
+INSERT INTO etage (nom, numero, superficie) VALUES
 ('RDC', 0, 500),
 ('R+1', 1, 500);
 
-INSERT INTO salle (nom_salle, numero_etage, capacite) VALUES
+-- Correction des noms de colonnes pour correspondre à la définition de la table
+INSERT INTO salle (nom, id_etage, capacite) VALUES
 ('Lounge', 1, 100),
 ('Studio Son', 1, 5),
 ('Broadcasting', 2, 50),
@@ -64,6 +65,4 @@ INSERT INTO salle (nom_salle, numero_etage, capacite) VALUES
 ('Coworking', 2, 80),
 ('Studio Video', 2, 5);
 
---job4 fichier Python = 2 fichiers possible-- 
-
-
+--job4 fichier Python = 2 fichiers possible--
